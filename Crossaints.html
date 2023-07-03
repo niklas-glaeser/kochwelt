@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rezepte</title>
+    <link rel="icon" type="image/png" href="./img/logo_small.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="Style/header.css" />
+    <link rel="stylesheet" href="Style/style.css" />
+    <script src="JS/recipe.js"></script>
+    <script src="JS/header.js"></script>
+  </head>
+  <body onload="includeHTML()">
+    <div w3-include-html="header.html"></div>
+
+    <section class="taco-salat">
+      <div class="recipe-header">
+        <h1>Taco-Salat</h1>
+        <img src="img/crossi.jpg" alt="Taco-Salat" />
+      </div>
+      <div class="recipe-icon-container">
+        <div class="recipe-icons">
+          <img src="img/icons/clock-regular.svg" alt="Time" />
+          <span>30min</span>
+        </div>
+        <div class="recipe-icons">
+          <img src="img/icons/brain-solid.svg" alt="simple" />
+          <span>simple</span>
+        </div>
+        <div class="recipe-icons">
+          <img src="img/icons/calendar-alt-regular.svg" alt="Time" />
+          <span>26.06.2023</span>
+        </div>
+      </div>
+
+      <div class="grey-line"></div>
+
+      <div class="input-area">
+        <p>Zutaten für</p>
+        <div class="calculation-area">
+          <input
+            id="inputField"
+            placeholder="4"
+            type="number"
+            min="0"
+            oninput="validity.valid||(value='');"
+          />
+
+          <button onclick="Calculate()" class="button-portions">
+            Portionen
+          </button>
+        </div>
+      </div>
+      <table class="recipe-table">
+        <tr>
+          <td><span id="amount1" type="number">12</span> Gramm Salz</td>
+        </tr>
+        <tr>
+          <td><span id="amount2">125</span> Gramm Milch</td>
+        </tr>
+        <tr>
+          <td><span id="amount3">50</span> Gramm Mehl (zusätzlich, Typ 550)</td>
+        </tr>
+        <tr>
+          <td><span id="amount4">500</span> Gramm Mehl (Typ 550)</td>
+        </tr>
+        <tr>
+          <td><span id="amount5">25</span> Gramm Hefe (Frischhefe)</td>
+        </tr>
+        <tr>
+          <td><span id="amount6">25</span> Gramm Butter</td>
+        </tr>
+        <tr>
+          <td><span id="amount7">200</span> Gramm Wasser</td>
+        </tr>
+        <tr>
+          <td>
+            <span id="amount8">40</span> Gramm Zucker</td>
+        </tr>
+      </table>
+      
+
+
+      <div class="preperation">
+        <h2>Zubereitung</h2>
+
+        <div class="prep-icons">
+          <div class="recipe-icons">
+            <img src="img/icons/clock-regular.svg" alt="Time" />
+            <span>300 Min. Gesamtzeit </span>
+          </div>
+          <div class="recipe-icons">
+            <img src="img/icons/clock-regular.svg" alt="Time" />
+            <span>40 Min. Zubereitungszeit</span>
+          </div>
+          <div class="recipe-icons">
+            <img src="img/icons/clock-regular.svg" alt="Time" />
+            <span>260 Min. Koch & Ruhezeit</span>
+          </div>
+        </div>
+        <p>
+          Ca. 1 Stunde vor Beginn, Hefe und Butter bei Zimmertemperatur aufwärmen lassen.
+          500 g Mehl mit Salz vermischen. <br>
+          Wasser, Milch und Zucker in der Mikrowelle erwärmen (Trinktemperatur). Danach die Hefe darin auflösen. <br>
+          Eine Vertiefung ins Mehl drücken und die Flüssigkeit unter Rühren langsam dazuschütten. <br>
+          Das Mehl von innen nach außen unterarbeiten, bis eine Teigkugel entsteht. <br>
+          Schüssel zudecken und den Teig 30 Minuten gehen lassen. <br>
+          Währenddessen 250g weiche Butter mit 50g Mehl verrühren. <br>
+        </p>
+        <p>
+          <b>Nach 30 Minuten</b> <br>
+          Teig noch einmal durchkneten, dann aus der Schüssel nehmen und in 4 Kugeln teilen. Butter ebenfalls in 4 gleiche Portionen aufteilen. <br>
+          Ein Arbeitsbrett gut einmehlen und eine Teigportion darauf ausrollen - sollte ca. DIN A4-Größe ergeben - Zwischendurch immer wieder wenden und neu einmehlen
+          Eine Portion Butter in die Mitte setzen und auf ca. Postkartengröße grob verstreichen. <br>
+          Danach die verstrichene Butter in den Teig einpacken. Dazu den Teig sehr leicht anfeuchten und zuerst die langen Kanten umschlagen und danach die kurzen Seiten übereinanderschlagen. Das verhindert, daß die Butter in den folgenden Arbeitsschritten aus dem Teig tritt. <br>
+          Das Teigpäckchen in Frischhaltefolie einwickeln und in den Kühlschrank verfrachten. Dasselbe für die anderen Portionen wiederholen. Der Teig muss mindestens(!) 4 Stunden im Kühlschrank bleiben.
+        </p>
+        <p>
+          <b>4(oder mehr) Stunden später:</b> <br>
+          Arbeitsplatte gut einmehlen, eine Portion Teig aus dem Kühlschrank holen und in eine längliche Form ausrollen.
+        </p>
+      </div>
+      <div class="user-container">
+        <h3>Rezept erstellt von</h3>
+        <div class="user">
+          <img class="user-image" src="img/profile.png" />
+          <p class="user-name">Dominik Mäder</p>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <a href="impressum.html">Impressum</a>
+      <span>|</span>
+      <a href="">Datenschutz</a>
+    </footer>
+  </body>
+</html>

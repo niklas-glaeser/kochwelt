@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kochwelt</title>
+    <link rel="icon" type="image/png" href="./img/logo_small.png">
+    <link rel="stylesheet" href="Style/header.css" />
+    <link rel="stylesheet" href="Style/style.css">
+    <script src="JS/header.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+  </head>
+  
+  <body onload="includeHTML()">
+    <div w3-include-html="header.html"></div>
+
+    <div class="main">
+      <section class="preview">
+        <div class="croissant-img"><img class="main-img" src="img/tacosalat.jpg" alt="" /></div>
+        <div class="croissant-text">
+          <h2>Taco-Salat</h2>
+          <p>
+            Taco-Salat ist ein beliebtes Gericht der texanischen Küche, das aus einer Mischung von gewürztem Hackfleisch, knusprigen Tortilla-Chips, frischem Gemüse wie Salat, Tomaten und Avocado sowie Käse und einem Dressing besteht. Es ist ein vielseitiges und sättigendes Gericht, das oft mit mexikanischen Aromen und Gewürzen zubereitet wird und eine Kombination aus Geschmack und Textur bietet.
+          </p>
+
+          <button class="buttonPortions mt-40" onclick="goMenuTacco()" >Rezept öffnen</button>
+        </div>
+      </section>
+
+      <section class="new">
+        <h2>Lust auf was neues?</h2>
+        <div class="new-images">
+          <div class="new-img">
+            <img class="images margin-left" src="img/lasagne.jpeg" alt="taccoSalat" onclick="goMenuLasagne()"/>
+            <span class="margin-left bold">Italienische Lasagne</span>
+          </div>
+          <div class="new-img">
+            <img class="images " src="img/crossi.jpg" alt="" onclick="goMenuCrossi()"/>
+            <span class="bold">Frische Croissant</span>
+          </div>
+          <div class="new-img">
+            <img class="images margin-right" src="img/tortellini-erbsen-auflauf.png" alt="" onclick="goMenuTortellini()"/>
+            <span class="margin-right bold">Tortellini Auflauf</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="blog">
+        <h2>Pfanne vs. Wok - Was ist besser?</h2>
+        <div class="blog-flex margin-left">
+            <div>Die Wahl zwischen einer Pfanne und einem Wok hängt von den persönlichen Vorlieben und dem gewünschten Kochstil ab. Eine Pfanne ist vielseitig einsetzbar und eignet sich gut für eine Vielzahl von Gerichten, während ein Wok besonders gut für das schnelle und heiße Rühren von asiatischen Gerichten geeignet ist. Beide haben ihre Vorzüge, und die Entscheidung hängt letztendlich von den individuellen Kochbedürfnissen und -präferenzen ab.
+            </div>
+            
+            <div><img class="images margin-right" src="img/croissant.jpg" alt=""></div>
+        </div>
+      </section>
+             
+      <footer class="footer">
+        <a href="impressum.html">Impressum</a>
+        <span>|</span>
+        <a href="">Datenschutz</a>
+      </footer>
+
+    </div>
+  </body>
+</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kochwelt</title>
+    <link rel="icon" type="image/png" href="./img/logo_small.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="Style/header.css" />
+    <link rel="stylesheet" href="Style/style.css" />
+    <script src="JS/recipe.js"></script>
+    <script src="JS/header.js"></script>
+  </head>
+  <body onload="includeHTML()">
+    <div w3-include-html="header.html"></div>
+
+    <section class="taco-salat">
+      <div class="recipe-header">
+        <h1>Taco-Salat</h1>
+        <img src="img/tacosalat.jpg" alt="Taco-Salat" />
+      </div>
+      <div class="recipe-icon-container">
+        <div class="recipe-icons">
+          <img src="img/icons/clock-regular.svg" alt="Time" />
+          <span>30min</span>
+        </div>
+        <div class="recipe-icons">
+          <img src="img/icons/brain-solid.svg" alt="simple" />
+          <span>simple</span>
+        </div>
+        <div class="recipe-icons">
+          <img src="img/icons/calendar-alt-regular.svg" alt="Time" />
+          <span>26.06.2023</span>
+        </div>
+      </div>
+
+      <div class="grey-line"></div>
+
+      <div class="input-area">
+        <p>Zutaten für</p>
+        <div class="calculation-area">
+          <input
+            id="inputField"
+            placeholder="4"
+            type="number"
+            min="0"
+            oninput="validity.valid||(value='');"
+          />
+
+          <button onclick="Calculate()" class="button-portions">
+            Portionen
+          </button>
+        </div>
+      </div>
+      <table class="recipe-table">
+        <tr>
+          <td><span id="amount1" type="number">500</span> Gramm Hackfleisch</td>
+        </tr>
+        <tr>
+          <td><span id="amount2">1</span> Flasche Salsa Texicana</td>
+        </tr>
+        <tr>
+          <td><span id="amount3">3</span> Paprikaschote(n),bunte</td>
+        </tr>
+        <tr>
+          <td><span id="amount4">1</span> Salatgurke(n)</td>
+        </tr>
+        <tr>
+          <td><span id="amount5">4</span> Tomate(n)</td>
+        </tr>
+        <tr>
+          <td><span id="amount6">1</span> Dose Mais</td>
+        </tr>
+        <tr>
+          <td><span id="amount7">1</span> Dose Kidneybohnen</td>
+        </tr>
+        <tr>
+          <td>
+            <span id="amount8">200</span> Gramm Crème fraîche mit Kräutern
+          </td>
+        </tr>
+        <tr>
+          <td><span id="amount9">100</span> Gramm Gouda,gerieben</td>
+        </tr>
+        <tr>
+          <td><span id="amount10">1</span> Tüte/n Tacos</td>
+        </tr>
+      </table>
+
+      <div class="preperation">
+        <h2>Zubereitung</h2>
+
+        <div class="prep-icons">
+          <div class="recipe-icons">
+            <img src="img/icons/clock-regular.svg" alt="Time" />
+            <span>30 Min. Zubereitung </span>
+          </div>
+          <div class="recipe-icons">
+            <img src="img/icons/clock-regular.svg" alt="Time" />
+            <span>4 Stunden Ruhezeit</span>
+          </div>
+          <div class="recipe-icons">
+            <img src="img/icons/clock-regular.svg" alt="Time" />
+            <span>4:30 Stunden Gesamtzeit</span>
+          </div>
+        </div>
+        <p>
+          Das Hackfleisch krümelig anbraten. Eine halbe Flasche Texicana Salsa
+          unterrühren und erkalten lassen.
+        </p>
+        <p>
+          Die Kräuter-Crème fraîche mit der restlichen Texicana Salsa verrühren
+          und über die Bohnen geben. <br />
+          Das erkaltete Hackfleisch darüber verteilen und mit Gouda bestreuen.
+          Anschließend die Tacos zerbrösln und darauf verteilen.
+        </p>
+        <h3>Tipps zum Rezept</h3>
+        <p>
+          Am besten sollte man diesen Salat einige Stunden oder gar einen Tag
+          vorher zubereiten, damit er gut durchziehen kann. <br />
+        </p>
+      </div>
+      <div class="user-container">
+        <h3>Rezept erstellt von</h3>
+        <div class="user">
+          <img class="user-image" src="img/user.jpg" />
+          <p class="user-name">Sebastian Brosda</p>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <a href="impressum.html">Impressum</a>
+      <span>|</span>
+      <a href="">Datenschutz</a>
+    </footer>
+  </body>
+</html>

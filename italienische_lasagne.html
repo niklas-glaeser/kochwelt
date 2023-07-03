@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kochwelt</title>
+    <link rel="icon" type="image/png" href="./img/logo_small.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="Style/header.css" />
+    <link rel="stylesheet" href="Style/style.css" />
+    <script src="JS/recipe.js"></script>
+    <script src="JS/header.js"></script>
+  </head>
+  <body onload="includeHTML()">
+    <div w3-include-html="header.html"></div>
+
+    <section class="taco-salat">
+      <div class="recipe-header">
+        <h1>Italienische Lasagne</h1>
+        <img src="img/lasagne.jpeg" alt="Lasagne" />
+      </div>
+      <div class="recipe-icon-container">
+        <div class="recipe-icons">
+          <img src="img/icons/clock-regular.svg" alt="Time" />
+          <span>30min</span>
+        </div>
+        <div class="recipe-icons">
+          <img src="img/icons/brain-solid.svg" alt="simple" />
+          <span>simple</span>
+        </div>
+        <div class="recipe-icons">
+          <img src="img/icons/calendar-alt-regular.svg" alt="Time" />
+          <span>26.06.2023</span>
+        </div>
+      </div>
+
+      <div class="grey-line"></div>
+
+      <div class="input-area">
+        <p>Zutaten für</p>
+        <div class="calculation-area">
+          <input
+            id="inputField"
+            placeholder="4"
+            type="number"
+            min="0"
+            oninput="validity.valid||(value='');"
+          />
+
+          <button onclick="Calculate()" class="button-portions">
+            Portionen
+          </button>
+        </div>
+      </div>
+      <table class="recipe-table">
+        <tr>
+          <td><span id="amount1" type="number">500</span> Gramm Rinderhackfleisch</td>
+        </tr>
+        <tr>
+          <td><span id="amount2">1</span> Zwiebel</td>
+        </tr>
+        <tr>
+          <td><span id="amount3">1</span> Zehe Knoblauch</td>
+        </tr>
+        <tr>
+          <td><span id="amount4">2</span> Karotte(n)</td>
+        </tr>
+        <tr>
+          <td><span id="amount5">50</span> Gramm ungesalzene Butter</td>
+        </tr>
+        <tr>
+          <td><span id="amount6">2</span> TL getrocknete Oregano</td>
+        </tr>
+        <tr>
+          <td><span id="amount7">2</span> Dose(n) stückige Tomaten</td>
+        </tr>
+        <tr>
+          <td>
+            <span id="amount8">500</span> ml Milch
+          </td>
+        </tr>
+        <tr>
+          <td><span id="amount9">150</span> Lasagneplatten</td>
+        </tr>
+        <tr>
+          <td><span id="amount10">60</span> Gramm Parmesankäse</td>
+        </tr>
+      </table>
+
+      <div class="preperation">
+        <h2>Zubereitung</h2>
+
+        <div class="prep-icons">
+          <div class="recipe-icons">
+            <img src="img/icons/clock-regular.svg" alt="Time" />
+            <span>30 Min. Zubereitung </span>
+          </div>
+          <div class="recipe-icons">
+            <img src="img/icons/clock-regular.svg" alt="Time" />
+            <span>4 Stunden Ruhezeit</span>
+          </div>
+          <div class="recipe-icons">
+            <img src="img/icons/clock-regular.svg" alt="Time" />
+            <span>4:30 Stunden Gesamtzeit</span>
+          </div>
+        </div>
+        <p>
+         1. Für das Lasagne Rezept den Knoblauch fein hacken. Zwiebel und Karotten schälen und würfeln. <br> <br>
+         2. Etwas Olivenöl in einer großen Pfanne erhitzen und die Zwiebeln, Karotten und Knoblauch anbraten. Das Rinderhackfleisch mit Hilfe eines Kochlöffels gleichmäßig anbraten. Mit Salz und Pfeffer abschmecken.
+        </p>
+        <p>
+          3. Dann die gehackten Tomaten hinzugeben und erneut mit Salz und Pfeffer würzen. Mit geschlossenem Deckel bei mittlerer Hitze für etwa 15-20 Min. köcheln lassen. Den getrockneten Oregano einrühren. <br> <br>
+          4. Den Ofen auf 200°C für die Lasagne vorheizen. Für die Béchamelsoße, die Butter in einem kleinen Topf schmelzen. Mehl dazugeben und unter Rühren anrösten. <br> <br>
+          5. Nach und nach und unter ständigem Rühren kalte Milch hinzugeben und die Hitze reduzieren, für etwa 5-8 Min. Mit Muskat, Salz und Pfeffer abschmecken. <br> <br>
+          6. Den Boden der Auflaufform mit Olivenöl und danach mit einer Schicht Béchamel bedecken. Jetzt erst Lasagneblätter, dann Bolognese und Béchamelsoße nacheinander schichten. Wiederholen, bis alle Zutaten aufgebraucht sind. Mit der restlichen Béchamel abschließen. <br> <br>
+          7. Den Parmesan über die letzte Schicht reiben und die Lasagne in einem vorgeheizten Ofen bei 200°C/390°F auf der mittleren Schiene für etwa 30-40 Min. backen, oder bis die Oberseite golden ist. In der heißen Auflaufform servieren. Guten Appetit!
+        </p>
+        
+      </div>
+      <div class="user-container">
+        <h3>Rezept erstellt von</h3>
+        <div class="user">
+          <img class="user-image" src="img/profilbild tiktok12 Kopie.png" />
+          <p class="user-name">Sebastian Brosda</p>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <a href="impressum.html">Impressum</a>
+      <span>|</span>
+      <a href="">Datenschutz</a>
+    </footer>
+  </body>
+</html>

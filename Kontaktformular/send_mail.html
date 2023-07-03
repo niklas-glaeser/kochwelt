@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Email</title>
+    <link rel="stylesheet" href="kochwelt_startseite\style.css">
+    <script src="./"></script>
+  </head>
+
+  <style>
+    body{
+      background-image: url(img/essen-mit-zutaten.jpg);
+      width: 100%;
+      height: auto;
+      background-size: cover;
+      background-position: right center;
+      font-family: "Raleway", sans-serif;
+
+
+    }
+
+
+    form {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      padding: 20px;
+    }
+
+    #contactInput {
+      background-color: inherit;
+      width: 350px;
+      height: 270px;
+      border-radius: 10px;
+      border: 2px solid #008000;
+    }
+    #contactName {
+      width: 250px;
+      height: 20px;
+      margin-bottom: 10px;
+      border: 1px solid #008000;
+      border-radius: 5px;
+    }
+    textarea {
+      width: 250px;
+      height: 150px;
+      resize: none;
+      white-space: pre-wrap;
+      border: 1px solid #008000;
+      border-radius: 5px;
+      margin-bottom: 10px;
+    }
+
+    .contactCenter {
+      display: flex;
+      justify-content: center;
+    }
+
+    button {
+      border: none;
+      cursor: pointer;
+      background-color: #008000;
+      padding: 8px;
+      min-width: 120px;
+      max-width: 200px;
+      font-size: 16px;
+      text-decoration: none;
+      text-align: center;
+      cursor: pointer;
+      color: white;
+      font-family: "Raleway", sans-serif;
+    }
+
+    #ContactText {
+      color: white;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+    }
+  </style>
+
+  <body onload="includeHTML()">
+    <div w3-include-html="header.html"></div>
+
+      <span id="ContactText">
+        <h1>Kontakt</h1>
+        <p>
+          Du hast Ideen oder fragen zu unseren Rezepten ? <br />
+          Dann melde dich gerne bei uns
+        </p>
+      </span>
+      <div class="contactCenter">
+        <div id="contactInput">
+          <form
+            action="ftp://f015cce0@kochwelt-602.developerakademie.net/Kochwelt/Kochwelt%20fertig/KOCHWELT/Kontaktformular/send_mail.php"
+            method="post"
+          >
+            <input id="contactName" name="name" placeholder="Dein Name" />
+            <textarea
+              name="message"
+              placeholder="deine Nachricht oder Idee"
+              name=""
+              id=""
+            ></textarea>
+
+            <button type="submit">Mail senden</button>
+          </form>
+        </div>
+      </div>
+    
+  </body>
+</html>
