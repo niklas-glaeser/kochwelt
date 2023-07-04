@@ -17,7 +17,7 @@ function goMenuTacco(){
 }
 
 function frontpage(){
-  window.location.href="index.html"
+  window.location.href="/index.html"
 }
 
 function goMenuCrossi() {
