@@ -13,7 +13,7 @@ async function includeHTML() {
 }
 
 function goMenuTacco(){
-  window.location.href="/recipe-pages/taco-salat.html"
+  window.location.href="recipe-pages/taco-salat.html"
 }
 
 function frontpage(){
@@ -31,6 +31,5 @@ function goMenuTortellini() {
 function goMenuLasagne() {
   window.location.href="/recipe-pages/italienische-lasagne.html"
 }
-
 
 
