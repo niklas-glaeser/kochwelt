@@ -13,23 +13,23 @@ async function includeHTML() {
 }
 
 function goMenuTacco(){
-  window.location.href="recipe-pages/taco-salat.html"
+  window.location.href="taco-salat.html"
 }
 
 function frontpage(){
-  window.location.href="/index.html"
+  window.location.href="index.html"
 }
 
 function goMenuCrossi() {
-  window.location.href="recipe-pages/crossaints.html"
+  window.location.href="crossaints.html"
 }
 
 function goMenuTortellini() {
-  window.location.href="recipe-pages/tortellini-erbsen-auflauf.html"
+  window.location.href="tortellini-erbsen-auflauf.html"
 }
 
 function goMenuLasagne() {
-  window.location.href="recipe-pages/italienische-lasagne.html"
+  window.location.href="italienische-lasagne.html"
 }
 
 
