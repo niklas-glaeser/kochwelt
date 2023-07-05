@@ -21,7 +21,7 @@ function frontpage(){
 }
 
 function goMenuCrossi() {
-  window.location.href="/recipe-pages/crossaints.html"
+  window.location.href="recipe-pages/crossaints.html"
 }
 
 function goMenuTortellini() {
@@ -29,7 +29,7 @@ function goMenuTortellini() {
 }
 
 function goMenuLasagne() {
-  window.location.href="/recipe-pages/italienische-lasagne.html"
+  window.location.href="recipe-pages/italienische-lasagne.html"
 }
 
 
